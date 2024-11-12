@@ -2,7 +2,7 @@ public class Bubblesort {
     public void sort(int[] array) {
         int n = array.length;
         boolean swapped;
-        int i = 0; // Inicializa o índice para o laço `while`
+        int i = 0;
 
         while (i < n - 1) {
             swapped = false;
@@ -15,13 +15,13 @@ public class Bubblesort {
                     array[a + 1] = temp;
                     swapped = true;
                 }
-                a++; // Incrementa o índice `j`
+                a++;
             }
 
             if (!swapped) {
-                break; // Interrompe o laço se não houver trocas
+                break;
             }
-            i++; // Incrementa o índice `i`
+            i++;
         }
     }
 }
